@@ -1,0 +1,38 @@
+.contact-page {
+  position: relative;
+
+    span {
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+      
+ 
+  .contact-form {
+    // position: relative;
+    // top: 50%;
+    // left: 200px;
+    padding: 20px;
+    // background-color: #F4C26F;
+    // border: 1px solid #F4A259;
+    border-radius: 5px;
+    // box-shadow: 0 2px 4px #F4A259;
+    margin-top: 20px;
+    width: 20%;
+    height: 25%;
+  }
+.contact-form-form {
+  border: 25px solid #F4A259;
+}
+    textarea {
+      width: 100%;
+      border: #F4A259;
+      background: whitesmoke;
+      height: 50px;
+      font-size: 16px;
+      color: black;
+      padding: 20px;
+      box-sizing: border-box;
+      min-height: 150px;
+    }
+    
