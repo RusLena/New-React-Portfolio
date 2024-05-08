@@ -1,14 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
     let prevScrollPos = window.pageYOffset;
-    const header = document.getElementById("header");
+    const navbar = document.getElementById("navbar");
 
     window.addEventListener('scroll', function() {
         let currentScrollPos = window.pageYOffset;
 
         if (prevScrollPos > currentScrollPos) {
-            header.style.top = "0"; // Show navbar when scrolling up
+            navbar.style.top = "0"; // Show navbar when scrolling up
         } else {
-            header.style.top = `-${header.offsetHeight}px`; // Hide navbar when scrolling down
+            navbar.style.top = `-${navbar.offsetHeight}px`; // Hide navbar when scrolling down
         }
         prevScrollPos = currentScrollPos;
     });

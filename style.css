@@ -1,4 +1,4 @@
-body, h1, h2, h3, p, ul, li {
+body, h2, h3 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,6 +11,18 @@ body {
     line-height: 1.6;
 }
 
+h1 {
+    font-family: 'Your Dynamic Font', sans-serif;
+    animation: sparkle 10s ease infinite;/* Use the dynamic font */
+    font-size: 2.5rem;
+    color: #fff; /* White text color */
+    margin-bottom: 1rem; /* Add margin below the heading */
+}
+@keyframes sparkle {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
 .background {
     position: fixed;
     top: 0;
@@ -19,8 +31,6 @@ body {
     height: 100%;
     z-index: -1;
     background-color: #070216;
-    /* background-image: url('starry-night-background.jpg');
-    background-size: cover; */
     background-position: center; 
 }
 
@@ -32,7 +42,7 @@ body {
 
 #navbar {
     position: fixed;
-    top: 0; /* Place at the top of the viewport */
+    top: 0;
     right: 0;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -53,164 +63,55 @@ body {
 }
 
 .menu {
-margin-right: 95px;
-color: aliceblue;
-text-decoration: none;
-transition: color 0.3s ease;
+    margin-right: 95px;
+    color: aliceblue;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .menu.active {
-    color: rgb(215, 105, 239); 
-    cursor: pointer; 
+    color: rgb(215, 105, 239);
+    cursor: pointer;
 }
 
 header {
     position: relative;
     height: 1vh;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
 }
 
 #about {
-    padding-top: 100px;
+    padding-top: 80px;
     text-align: center;
     justify-content: center;
     gap: 2rem; 
+
 }
 
-/* #about {
-    display: flex;
-    align-items: center; /* Vertically align items 
-    gap: 2rem;  Spacing between elements 
-} 
-*/
 .photo {
     width: 280px;
     height: 280px;
-    /* margin-inline-end: 10rem; */
     border-radius: 50%;
     border: solid aliceblue;
-    /* margin-right: 2rem;
-    margin-left: 5rem; */
-    margin-bottom: 70px;
+    margin-bottom: 20px;
 }
 
 .intro {
-    font-family: 'Roboto', sans-serif; /* Use Roboto font */
-    font-size: 1.1rem;
-    /* line-height: 1.6; */
-    color: #fff; /* White text color */
-    margin-bottom: 10px;
-    /* line-height: 1.6;  Add margin below the intro paragraph */
-}
-
-
-/* #projects { */
-    /* padding: 20px; */
-    /* text-align: right;
-} */
-
-.img {
-    max-width: 50%;
-    height: auto; 
-    width: 380px;
-    height: 220px;
-    /* margin: 20px; */
-    border-radius: 1.3rem;
-    border: solid aliceblue;
-    /* display: flex; */
-    /* flex-shrink: 0; */
-    margin-bottom: 10px;
-}
- .img-container {
-    max-width: 50%;
-    /* width: 450px; */
-    height: auto; 
-    border-radius: 1.3rem;
-    flex-shrink: 0;
-    /* margin-left: 20px; */
-}
-
-/* .img-container {
-    display: flex; 
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
-    justify-content: flex-end;
-   
-} */
-/* .project-image { 
-flex: 0 0 50%; Set the image container width
     display: flex;
     flex-direction: column;
-    justify-content: right;
-    align-items:flex-end;
-}
-
-/* .img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 10px;
-} */
-/* .img {
-    /* max-width: 100%; 
-    height: auto; /* Maintain aspect ratio 
-    border-radius: 10px; /* Add border radius to images 
-    margin-bottom: 1rem; 
-} 
-*/
-
-/* .article { */
-    /* max-width: 400px; */
-    /* display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin-bottom: 40px; */
-/* } */
-
-h1 {
-    font-family: 'Roboto', sans-serif; /* Use Roboto font */
-    font-size: 2.5rem;
-    color: #fff; /* White text color */
-    margin-bottom: 1rem; /* Add margin below the heading */
-}
-
-h2 {
-    font-family: 'Roboto', sans-serif; /* Use Roboto font */
-    font-size: 2rem;
-    color: #fff; /* White text color */
-    margin-bottom: 1.5rem; /* Add margin below the heading */
-}
-
-h3 {
-    font-family: 'Roboto', sans-serif; /* Use Roboto font */
-    font-size: 1.5rem;
-    color: #fff; /* White text color */
-    margin-bottom: 1rem; /* Add margin below the heading */
-}
-
-p {
-    font-family: 'Roboto', sans-serif; /* Use Roboto font */
-    font-size: 1rem;
-    color: #fff; /* White text color */
-    margin-bottom: 1.5rem; /* Add margin below paragraphs */
-   
-}
-
-.btn {
-    background-color: rgba(255, 255, 255, 0.3);
-    border: none;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    /* display: block;
-    justify-content: flex-end;
     align-items: center;
-    margin-right: 145px; */
-    margin-top: 30px;
+    text-align: center; 
+    justify-content: center; 
+    margin-left: 10%; 
+    margin-right: 10%; 
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.intro p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 10px;
 }
 
 a.btn {
@@ -221,7 +122,6 @@ a.btn {
     cursor: pointer;
     transition: background-color 0.3s ease;
     display: inline-block;
-    align-items: center; 
     border-radius: 5px;
     margin-top: 20px;
 }
@@ -230,38 +130,65 @@ a.btn {
     background-color: rgba(161, 173, 227, 0.5);
 }
 
-/* .projects {
-    text-align: center; 
-    margin-bottom: 4rem;
-} */
+.btn {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+#title{
+    margin-top: 50px;
+    text-align: center;
+    justify-content: center;
+}
+
 .project {
     display: flex;
-    align-items: flex-start;
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Add space between items */
     margin-bottom: 40px;
 }
 
 .project-content {
-    flex: 0 0 50%; /* Set the content width */
-    /* display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;  */
-    padding-right: 50%; 
-    padding-left: 50px;
-    text-align: left;
+    flex: 1;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
 }
 
-
-.project-content {
-    position: relative;
-    z-index: 1;
-    /* Add styles for your content container */
+.project-image {
+    flex: 0 0 45%; /* Set the image width */
+    text-align: center; /* Align image and button to the right */
 }
 
-.work {
-    display: flex;
+.project-image img {
+    max-width: 50%; 
+    height: 230px;
+    border-radius: 1.3rem;
+    border: solid aliceblue;
+    margin-bottom: 10px;
 }
 
+@media screen and (max-width: 768px) {
+    #about {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #about .photo {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .intro {
+        max-width: 100%;
+    }
+}
 .end {
     padding-top: 100px;
     margin-top: 50px;
@@ -271,69 +198,10 @@ a.btn {
     color: aliceblue;
 }
 
-/* New CSS styles for media query */
-@media screen and (max-width: 768px) {
-    #about {
-        flex-direction: column; /* Stack elements vertically */
-        align-items: flex-start; /* Align items to the start */
-    }
-
-    #about .photo {
-        margin-right: 0; 
-        margin-bottom: 1rem; /* Add margin below the photo for spacing */
-        /* width: 100%;  */
-    }
-
-    .intro {
-        max-width: 100%; /* Make text take up full width */
-    }
-}
-
 #footer {
+    margin-top: 150px;
     text-align: center;
     padding: 2rem 0;
     background-color: #070216;
     color: #fff;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .toggle-switch-border {
-        display: inline-flex;
-        align-items: center;
-        width: 60px;
-        height: 36px;
-        border: 1px solid gainsboro;
-        border-radius: 20px;
-        box-sizing: 20px;
-        box-sizing: border-box;
-        margin-inline-start: 8px;
-    }
-    .toggle-switch input{
-display: none;
-    }
-    .toggle-switch-dot {
-        width: 28px;
-        height: 28px;
-        border-radius: 50px;
-        background: rgb(226, 142, 226);
-        transform: translate3d(3px, 0, 0);
-    } */

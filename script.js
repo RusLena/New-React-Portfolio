@@ -1,12 +1,4 @@
-// let toggle=document.querySelector("#dark-mode-toggle")
-// toggle.addEventListener("click", () => {
-// if (toggle.checked) {
-//     document.body.style.setProperty("background", "rgb(13, 12, 12)")
-// }else {
-//     document.body.style.setProperty("background", "rgb(241, 161, 174)")
-// }
 
-// })
 document.addEventListener('DOMContentLoaded', function () {
     particlesJS("background", {
         "particles": {

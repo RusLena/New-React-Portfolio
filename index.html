@@ -6,10 +6,15 @@
     <link href="style.css" rel="stylesheet">
     <!-- Link to Roboto font from Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    !-- Link to Roboto font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link to dynamic font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Your+Dynamic+Font&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <title>Portfolio</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav id="navbar">
             <a class="menu" href="#about">About Me</a>
             <a class="menu" href="#projects">Work</a>
@@ -19,19 +24,20 @@
         <div class="background" id="background"></div>
     </header>
     <section id="about">
-        <h1>Hello, my name is Elena.</br> I'm a Freelance Fronted Developer.</h1>
+        <h1>Hello, </br> my name is Elena.</br> I'm a Freelance Frontend Developer.</h1>
         <img class="photo" src="./images/Designer (1).png">
-        <div>
-            
-            <p class="intro">As a recent graduate from a Front-End Web Development bootcamp, I’ve acquired practical skills in CSS, HTML5, JavaScript, jQuery, React.js, Node.js, and Git/GitHub. I particularly enjoy building responsive websites that provide an optimal viewing experience across a wide range of devices, as well as creating interactive UIs with the help of JS and React.js to enhance user experience. I also have a passion for collaborating on Open Source Projects and contributing to open-source projects, which allows me to learn from and collaborate with other developers. I’m eager to apply these skills in a real-world setting and make a positive impact through my work.</p>
+            <div class="intro">
+            <div class="intro-text">
+            <p>As a recent graduate from a Front-End Web Development bootcamp, I’ve acquired practical skills in CSS, HTML5, JavaScript, jQuery, React.js, Node.js, and Git/GitHub. I particularly enjoy building responsive websites that provide an optimal viewing experience across a wide range of devices, as well as creating interactive UIs with the help of JS and React.js to enhance user experience. I also have a passion for collaborating on Open Source Projects and contributing to open-source projects, which allows me to learn from and collaborate with other developers. I’m eager to apply these skills in a real-world setting and make a positive impact through my work.</p>
+            </div>
             <a class="btn" href="https://github.com/RusLena?tab=stars" target="blank">My projects</a>
         </div>
-    </section>
-
     
-
+    </section>
     <section id="projects">
-        <h2>Recent work</h2>
+        <div id="title">
+        <h2>Recent work</h2></div>
+        <div class="project">
             <div class="project-content">
                 <h3>Personal Website</h3>
                 <p>This project is a personal website aimed at helping users organize their daily routines and thoughts. It includes pages for journaling, task management, shopping lists, exercise tracking, and food logging. Developed using HTML, CSS, and JavaScript with React for interactivity, it ensures user data privacy through local storage. The interface features smooth animations courtesy of Animate.css, with additional functionality provided by React packages like Bootstrap and React-Icons.</p>
@@ -44,6 +50,8 @@
                 <button class="btn" onclick="window.open('https://g16-personal-website.netlify.app/', '_blank')">Netlify</button>
             </div>
         </div>
+        </div>
+        <div class="project">
             <div class="project-content">
                 <h3>Meow Finder</h3>
                 <p>Cat Finder App integrates with the Cat API Ninjas, featuring a carousel on the homepage displaying cat images and interactive modal forms with cat facts. The search page includes an intuitive search form and dropdown menu showcasing cat breeds. The catalogue page hosts a collection of cat profiles. Developed using HTML, CSS, Bootstrap, APIs, JavaScript, and jQuery.</p>
@@ -56,6 +64,22 @@
                 <button class="btn" onclick="window.open('https://ruslena.github.io/meow-finder/', '_blank')">Github</button>
             </div>
       </div>
+    </div>
+    <div class="project">
+      <div class="project-content">
+        <h3>A command-line app for generating an HTML webpage</h3>
+        <p>This application is designed to generate an HTML webpage that displays basic information about employees. It prompts the user to enter information about the team manager, engineers, and interns, and then generates an HTML page with their details.</p>
+        <strong>March 2024</strong>
+        
+    </div>
+    <div class="project-image">
+        <img class="img" src="./images/project3.png">
+        <div class="btn-container">
+        <button class="btn" onclick="window.open('https://github.com/RusLena/TeamGen-OOP.git', '_blank')">Github</button>
+    </div>
+</div>
+</div>
+        <div class="project">
             <div class="project-content">
                 <h3>Weather App</h3>
                 <p>Weather application provides real-time weather information for cities worldwide. You can retrieve the city's current weather conditions and view a 5-day forecast. Features of this app: 
@@ -64,7 +88,6 @@
                     Display of buttons for quick access to past searches.
                     Dynamic elements in the user interface based on fetched data. </p>
                 <strong>January 2024</strong>
-               
             </div>
             <div class="project-image">
                 <img class="img" src="./images/project2.png">
@@ -72,23 +95,13 @@
                 <button class="btn" onclick="window.open('https://ruslena.github.io/City-Weather/', '_blank')">GitHub</button> 
             </div>
        </div>
-            <div class="project-content">
-                <h3>A command-line app for generating an HTML webpage</h3>
-                <p>This application is designed to generate an HTML webpage that displays basic information about employees. It prompts the user to enter information about the team manager, engineers, and interns, and then generates an HTML page with their details.</p>
-                <strong>March 2024</strong>
-                
-            </div>
-            <div class="project-image">
-                <img class="img" src="./images/project3.png">
-                <div class="btn-container">
-                <button class="btn" onclick="window.open('https://github.com/RusLena/TeamGen-OOP.git', '_blank')">Github</button>
-            </div>
-        </div>
+    </div>
+            
     </section>
     <!-- Footer section -->
     <footer id="footer" class="end">
          <a class="ancor" href="https://www.facebook.com/profile.php?id=61558666816390" target="_blank">Contact me on Facebook</a> 
-         <p>&copy; E G 2024</p>
+        <p> Copyright&copy; E G 2024</p>
     </footer> 
     <script src="script.js"></script> 
     <script src="stars.js"></script>
