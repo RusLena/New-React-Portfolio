@@ -1,49 +1,34 @@
 document.addEventListener('DOMContentLoaded', function() {
-    let prevScrollPos = window.pageYOffset;
     const navbar = document.getElementById("navbar");
 
-    window.addEventListener('scroll', function() {
-        let currentScrollPos = window.pageYOffset;
+    // Remove the scroll event listener
+    window.removeEventListener('scroll', scrollHandler);
 
-        if (prevScrollPos > currentScrollPos) {
-            navbar.style.top = "0"; // Show navbar when scrolling up
+    // Function to handle scrolling behavior
+    function scrollHandler() {
+        if (window.scrollY > 50) { // Adjust the threshold as needed
+            navbar.classList.add('fixed'); // Add a class to make the navbar fixed
         } else {
-            navbar.style.top = `-${navbar.offsetHeight}px`; // Hide navbar when scrolling down
+            navbar.classList.remove('fixed'); // Remove the class to make the navbar not fixed
         }
-        prevScrollPos = currentScrollPos;
-    });
-});
+    }
 
-// Get all menu items
-var menuItems = document.querySelectorAll('.menu');
+    // Initial call to the scroll handler
+    scrollHandler();
 
-// Loop through each menu item and add event listener
-menuItems.forEach(function(menuItem) {
-    menuItem.addEventListener('click', function() {
-        // Remove 'active' class from all menu items
-        menuItems.forEach(function(item) {
-            item.classList.remove('active');
+    // Get all menu items
+    var menuItems = document.querySelectorAll('.menu');
+
+    // Loop through each menu item and add event listener
+    menuItems.forEach(function(menuItem) {
+        menuItem.addEventListener('click', function() {
+            // Remove 'active' class from all menu items
+            menuItems.forEach(function(item) {
+                item.classList.remove('active');
+            });
+
+            // Add 'active' class to clicked menu item
+            menuItem.classList.add('active');
         });
-
-        // Add 'active' class to clicked menu item
-        menuItem.classList.add('active');
     });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function scrollToRecentWork() {
-//     var recentWorkSection = document.getElementById('projects');
-//     recentWorkSection.scrollIntoView({ behavior: 'smooth' });
-// }
-
