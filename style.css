@@ -158,7 +158,7 @@ a.btn {
 
 .project-image img {
     max-width: 50%; 
-    height: 340px;
+    height: 250px;
     border-radius: 1.3rem;
     border: solid aliceblue;
     margin-bottom: 10px;
@@ -190,12 +190,13 @@ a.btn {
         max-width: 100%;
     }
     .project-image img {
-        max-width: 100%; /* Ensure image doesn't exceed container width */
-        height: auto;
+        max-width: 190px; /* Ensure image doesn't exceed container width */
+        height: 120px;
 }
 }
 .ancor {
     color: aliceblue;
+    margin: 10px; 
 }
 
 #footer {
@@ -204,8 +205,4 @@ a.btn {
     padding: 2rem;
     background-color: #070216;
     color: #fff;
-}
-.map{
-    width: 350px;
-    height: 300px;
 }
