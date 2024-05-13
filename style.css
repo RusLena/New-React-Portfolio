@@ -23,6 +23,7 @@ h1 {
     50% { opacity: 0.5; }
     100% { opacity: 1; }
 }
+
 .background {
     position: fixed;
     top: 0;
@@ -84,7 +85,6 @@ header {
     text-align: center;
     justify-content: center;
     gap: 2rem; 
-
 }
 
 .photo {
@@ -109,7 +109,7 @@ header {
 
 .intro p {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     color: #fff;
     margin-bottom: 10px;
 }
